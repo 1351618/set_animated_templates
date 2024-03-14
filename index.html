@@ -3,11 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./index.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <iframe src="./src/theme_switch_btn/theme_switch_btn.html"></iframe>
-    <iframe src="./src/btn_fill/btn_fill.html"></iframe>
+    <!--// ----------------------------------------------------------------- -->
+    <div>
+      <link rel="stylesheet" href="./css/fade_text.css" />
+      <div class="fade-text">
+        <span> Qual </span>
+        <span> Com </span>
+      </div>
+    </div>
+
+    <!--// ----------------------------------------------------------------- -->
+    <section class="btn-fill">
+      <link rel="stylesheet" href="./css/btn_fill.css" />
+      <button>
+        <span> btn fill </span>
+      </button>
+    </section>
+
+    <!--// ----------------------------------------------------------------- -->
+    <section class="theme-switch-btn">
+      <link rel="stylesheet" href="./css/theme_switch_btn.css" />
+      <div class="theme dark">
+        <input type="checkbox" id="themeToggle" />
+        <label for="themeToggle">
+          <image src="./img/moon.svg" alt="moonSvg" />
+          <image src="./img/sun.svg" alt="sunSvg" />
+        </label>
+      </div>
+    </section>
   </body>
 </html>

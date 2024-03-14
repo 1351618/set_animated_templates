@@ -1,0 +1,60 @@
+.fade-text {
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 4px #000000, -1px -1px 4px #ffffff;
+  animation: boxCompression 1s ease-in-out forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade-text span {
+  font-size: 30px;
+
+  font-weight: bold;
+  display: inline-block; /* Добавлено свойство display для элементов <span> */
+}
+
+.fade-text span:first-child {
+  color: rgb(209 211 255);
+  text-shadow: 2px 1px 4px #000000, -1px -1px 4px #ffffff;
+  animation: slideRight 1s ease-in-out forwards;
+  background-color: #838282;
+}
+
+.fade-text span:last-child {
+  color: rgb(209 211 255);
+  text-shadow: 2px 1px 4px #000000, -1px -1px 4px #ffffff;
+  background-color: #838282;
+  animation: slideLeft 1s ease-in-out forwards;
+  border-radius: 30px;
+  padding: 2px;
+}
+@keyframes boxCompression {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(100% - 30px); /* Сжатие блока по ширине на 40 пикселей */
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+    letter-spacing: 0px;
+  }
+  100% {
+    transform: translateX(21px);
+    letter-spacing: 1px;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-21px);
+  }
+}
